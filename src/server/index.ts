@@ -19,6 +19,8 @@ import { SocketIO } from './transport/socketio';
 import type { Server as ServerTypes, Game, StorageAPI } from '../types';
 
 export type KoaServer = ReturnType<Koa['listen']>;
+export { configureRouter };
+export { configureApp };
 
 interface ServerConfig {
   port?: number;

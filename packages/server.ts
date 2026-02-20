@@ -6,10 +6,32 @@
  * https://opensource.org/licenses/MIT.
  */
 
-import { Server } from '../src/server';
+import {
+  Server,
+  configureRouter,
+  configureApp,
+  createServerRunConfig,
+  getPortFromServer,
+} from '../src/server';
 import { Origins } from '../src/server/cors';
 import { FlatFile } from '../src/server/db';
-import { SocketIO } from '../src/server/transport/socketio';
+import {
+  SocketIO,
+  Master,
+  TransportAPI,
+} from '../src/server/transport/socketio';
 import { GenericPubSub } from '../src/server/transport/pubsub/generic-pub-sub';
 
-export { Server, Origins, FlatFile, SocketIO, GenericPubSub };
+export {
+  Server,
+  Origins,
+  FlatFile,
+  SocketIO,
+  GenericPubSub,
+  configureRouter,
+  configureApp,
+  createServerRunConfig,
+  getPortFromServer,
+  Master,
+  TransportAPI,
+};

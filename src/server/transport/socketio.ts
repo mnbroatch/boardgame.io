@@ -275,3 +275,5 @@ export class SocketIO {
     this.perMatchQueue.delete(matchID);
   }
 }
+
+export { Master };
